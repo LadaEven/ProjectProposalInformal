@@ -40,7 +40,31 @@
         \end{itemize}
 
     \begin{abstract}
-        Краткое изложение работы
+        Let me tell about the Riemann-Hilbert problem on elliptic curve.
+        We take a meromorphic matrix function $A(z)$ over a
+        complex manifold and solve the equation
+        $\dot{y} = A(z)y$ depending on $A$ we will get different solution, but the
+        solutions has a monodromy, which can be represented as a set of linear
+        maps.
+        Each map correspods to a singular point of a $A$.
+        This takes us to a monodromy, which is a representation of
+        the fundamental group of punctured surface.
+        But, given the monodromy, how can we find $A$ such that $A$ satisfies it?
+
+        It turns out that we can generalize our construction and treat the solutions
+        as a trivial bundle sections and $A$ as the matrix of a flat connection inside the bundle.
+        In this more general setting a huge opportuity potentially slumbers, because
+        the language of bundles and connections is more algebraic than the analytic one
+        which was presented in the beginning.
+        Let us confine the generalization to the case of stable bundles since their Chern
+        classes behave better than for a non-stable one, and
+         if the bundle has suficiently large degree. (The degree of the divisor
+        of the arbitrary section), then the bundle has a set of global sections
+        which form a basis at every point.
+        The profit of this confinement will not be seen in out current inquisitions, but this
+        property gives much in terms of algebraic structure of the bundle.
+        However, one can construct the connection explicitly.
+
         \begin{itemize}
             \item Предполагаемые результаты исследования
             \item Инструменты исследования
@@ -61,13 +85,18 @@
         Let us have an elliptic curve which is a holomorphic manifold.
     There is a theorem in \[Matveeva-Poberezhny\] article which deals
     with the case of a connection over a two-dimensional stable bundle.
-    They find a connection with $3$ branch points,
+    They find a connection corresponding to a rigid representation
+    (here: the representation induced from a sphere) with $3$ branch points.
+
 
 
     \section{FirstDraftIntroduction}\label{sec:firstdraftintroduction}
 %        В этой работе исследуются плоские логарифмические связности
+    The work treats flat logarighmic connections
 %        в голоморфных расслоениях размерности 1 и 2
+    in holomorphic bundles of rank $2$ and degree $0$ over elliptic curve.
 %        степени 0 над эллиптической кривой.
+    The curve has a fixed modular parameter $\tau$
 %        Эллиптическая кривая фиксирована с точностью
 %        до голоморфного диффеоморфизма.
 %        В работе явно опиcываются такие связности в частных
@@ -76,11 +105,21 @@
 %        и какие ограничения на набор координатных выражений таких
 %        связностей существуют.
 %
+    Horizontal sections of the connection are such sections that
+    $\Nabla s = 0$ or $ $
+    Any matrix function that changes along the bundle sections
+    such that the horizontal section stay horizontal fits as a
+    connection matrix for a particular bundle.
+    It would be marvelous to infer some general properties
+    of those connections
 %        В то же время предпринимается попытка применить
 %        базовые факты теории когомологий, такие как
+    using Serre Duality, Riemann-Roch cohomology theorem
 %        двойственность Серра, теорема Римана-Роха и гомологической
+    and $Ext$ groups.
 %        алгебры, такие, как производные функторы, для
 %        понимания структуры этих пространств.
+
 %        Вторым методом исследования является рассмотрение
 %        связности как расслоения,
 %        построенного по исходному расслоению.
