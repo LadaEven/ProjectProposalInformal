@@ -38,7 +38,15 @@
             инициалы научного руководителя ВКР
             \item место и год написания
         \end{itemize}
+	тут немного 
+	текста для компилирования в командной строке
+	и еще
+    володя
 
+    вода
+    kzkzkzkzkzk
+	
+	ляляляляя
     \begin{abstract}
         Let me tell about the Riemann-Hilbert problem on elliptic curve.
         We take a meromorphic matrix function $A(z)$ over a
@@ -50,6 +58,8 @@
         This takes us to a monodromy, which is a representation of
         the fundamental group of punctured surface.
         But, given the monodromy, how can we find $A$ such that $A$ satisfies it?
+        This question is a naive statement of a Riemann-Hilbert problem,
+        or Inverse Monodromy problem.
 
         It turns out that we can generalize our construction and treat the solutions
         as a trivial bundle sections and $A$ as the matrix of a flat connection inside the bundle.
@@ -63,13 +73,18 @@
         which form a basis at every point.
         The profit of this confinement will not be seen in out current inquisitions, but this
         property gives much in terms of algebraic structure of the bundle.
-        However, one can construct the connection explicitly.
+        Let us confine the considerations to the case of logarithmic(Fuchsian)
+        connections which have simple poles only.
+        However, one can try to construct the connections and solutions explicitly.
 
-        \begin{itemize}
-            \item Предполагаемые результаты исследования
-            \item Инструменты исследования
-            \item Наиболее интересные связи с раннее ивестными результатами
-        \end{itemize}
+        \Large{We solve (blablabla)}
+
+        \Large{And we are expecting to get (blablabla) results}
+%        \begin{itemize}
+%            \item Предполагаемые результаты исследования
+%            \item Инструменты исследования
+%            \item Наиболее интересные связи с раннее ивестными результатами
+%        \end{itemize}
 
 
     \end{abstract}
@@ -82,21 +97,18 @@
             \item История вопроса
         \end{itemize}
 
-        Let us have an elliptic curve which is a holomorphic manifold.
-    There is a theorem in \[Matveeva-Poberezhny\] article which deals
-    with the case of a connection over a two-dimensional stable bundle.
-    They find a connection corresponding to a rigid representation
-    (here: the representation induced from a sphere) with $3$ branch points.
 
 
 
-    \section{FirstDraftIntroduction}\label{sec:firstdraftintroduction}
+    Let us have an elliptic curve which is a holomorphic one-dimensional
+    manifold of genus $1$
 %        В этой работе исследуются плоские логарифмические связности
     The work treats flat logarighmic connections
 %        в голоморфных расслоениях размерности 1 и 2
     in holomorphic bundles of rank $2$ and degree $0$ over elliptic curve.
 %        степени 0 над эллиптической кривой.
-    The curve has a fixed modular parameter $\tau$
+    The curve has a fixed modular parameter $\tau$.
+    The bundle will be called $E$ and the base will be called $B$.
 %        Эллиптическая кривая фиксирована с точностью
 %        до голоморфного диффеоморфизма.
 %        В работе явно опиcываются такие связности в частных
@@ -106,42 +118,106 @@
 %        связностей существуют.
 %
     Horizontal sections of the connection are such sections that
-    $\Nabla s = 0$ or $ $
+    $\nabla s = 0$ or $d s = A dz \otimes s $ holds where both sides belong to
+    $E \otimes T^*M$.
     Any matrix function that changes along the bundle sections
-    such that the horizontal section stay horizontal fits as a
+    such that the horizontal section stays horizontal with
+    respect to this modifying matrix is
     connection matrix for a particular bundle.
-    It would be marvelous to infer some general properties
+    [Matveeva and Poberezhny] in their article which deal
+    with the case of a connection over a two-dimensional stable bundle.
+    They proof that the answer always exist.
+    They find a Fuchsian connection corresponding to a rigid representation
+    (here: the representation induced from a sphere) with $3$ branch points.
+    They find explicitly a conection which is associated to the stable bundle
+    $\mathcal{O}_{\lambda} (0) \oplus \mathcal{O}_{-\lambda} (0)$ for
+    given $\lambda$.
+    The logarithm of a local monodromy of any connection is conjugated to
+    the residue of the matrix of the connection at the given monodromy point.
+    Then, using these facts they find the solution for local monodromies and
+    give an integral equation that should be
+    satisfied by a conjugated (deformed) connection matrix so the global
+    monodromy was trivial.
+
+    There is a couple of thoughts I have not yet elaborated.
+    First, it would be marvelous to infer some general properties
     of those connections
 %        В то же время предпринимается попытка применить
 %        базовые факты теории когомологий, такие как
-    using Serre Duality, Riemann-Roch cohomology theorem
+    using Serre Duality, Riemann-Roch cohomology theorem, Chern characters
 %        двойственность Серра, теорема Римана-Роха и гомологической
-    and $Ext$ groups.
+    and $Ext$ groups, which are standard algebraic
+    instruments when we are studying complex manifolds.
 %        алгебры, такие, как производные функторы, для
 %        понимания структуры этих пространств.
-
+    Second, I like to think about connections as
 %        Вторым методом исследования является рассмотрение
 %        связности как расслоения,
+        sections itself, since they are actually special elements of
+        $F = Hom(E, E \otimes T^*M )$ which is a bundle itself.
+        The Leibniz rule and the flattness are two conditions which I
+    should restate in this settings so I could distinguish \enquote{good}
+    sections from \enquote{bad} ones.
+    The Fuchsianness of the connection means that there are no divisor points
+    with multiplicity more than $1$.
 %        построенного по исходному расслоению.
 %        Перспективным представляется случай стабильных
 %        и полустабильных расслоений и стабильных
 %        и полустабильных связностей, потому что свойство стабильности
 %        и полустабильности широко изучается в алгебраической геометрии.
 %
+
+    The classic analytic way to operate with the sections are
 %        Известно, что тета-функции Якоби и тета-функции Аппеля
+    Jacoby $\theta$-functions, as far as I know they
+    were discovered in the beginning of XIX century.
 %        позволяют выразить сечения расслоений ранга $1$ и $2$.
+    Any line-bundle has sections, represented by a product of theta-functions.
 %        Также классическим подходом к исследованию расслоений
 %        является рассмаотрение модулярной кривой расслоений.
+    We will heavily use it in our constructions.
+    Another classic object is Hypergeometric Differential Equation.
+    The canonical form is
+    \[ z(1-z) \frac{d^2y}{dz^2} + [c-(a+b+1)z] \frac{dy}{dz} - aby\]
+    This equation has regular singular points at $0,1, \infty$, and different
+    monodromies depending on $a,b,c$.
+    This second-order linear differential equation can be represented as
+    \begin{equation}
+        \begin{pmatrix}
+            0 & 1 & 0 \\
+            0 & 0 & 1 \\
+            \frac{ab}{z(z-1)} & \frac{c - (a+b+1)z}{z(z-1)} & 0
+
+        \end{pmatrix}  \begin{pmatrix} y_0 \\ y_1 \\ y_2
+                           \end{pmatrix} = \frac{d}{dz} \begin{pmatrix} y_0 \\ y_1 \\ y_2
+                                               \end{pmatrix}
+    \end{equation}
+        this equation has a two-dimensional space of solution.
+        The Riemann-Hilbert problem has a rich history, that will not be covered here.
+        Riemann in 1857 has published a paper where he considered the hypergeometric
+    equations and its monodromies.
+        Hilbert in 1905 solved the regular Riemann-Hilbert problem
+        for rank $2$ bundles.
 %        Эллиптические кривые являются классическим и неисссякаемым объектом
 %        исследований, начиная с трудов Абеля и Якоби начала XIX века.
 %        Они являются первым "Нетривиальным примером", на котором
 %        математики могут попробовать свои силы.
+    The Riemann-Hilbert problem on the Riemann
+        sphere was solved negatively by Alexander Bolybruch in $1988$.
+    He has provided an explicit counterexample of a punctured Riemann sphere fundamental
+    group representation that can not be a monodromy
+    representation of a Fuchsian system.
+    Bolybruch has obtained other results, one of them is that for
+    any \textit{irreducible} representation can be obtained as a monodromy.
 %        Исследование расслоений
 %        актуально, потому что расслоения и связности в них
 %        являются объектом изучения алгебраической геометрии,
 %        теории интегрируемых систем, дифференциальной геометрии,
 %        теории дифференциальных уравнений.
-%
+    The Riemann-Hilbert problem has connections with integrable systems and
+    algebraic geometry.
+    [See this and that book (FokasIts, for example)]
+
 %        Мамфорд показал, что пространство модулей стабильных расслоений
 %        заданного ранга и степени является квазипроективным
 %        алгебраическим многообразием, и его
