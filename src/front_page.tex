@@ -1,39 +1,42 @@
-\documentclass[11pt,a4paper,final,dvips]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
-\usepackage[T2A]{fontenc}
-\usepackage[left=3cm,right=3cm, top=2cm,bottom=3cm,bindingoffset=0cm]{geometry}
+ \documentclass[11pt,a4paper,final,dvips]{article}
+ \usepackage[utf8]{inputenc}
+% \usepackage[russian]{babel}
+ \usepackage[T2A]{fontenc}
+ \usepackage[left=3cm,right=3cm, top=2cm,bottom=3cm,bindingoffset=0cm]{geometry}
 
-\usepackage{amsmath, amsthm}
-\usepackage{amscd}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage[pdftex]{graphicx}
-\newcommand{\arr}{\xrightarrow}
-\DeclareMathOperator{\Maps}{Maps}
-\DeclareMathOperator{\Kn}{Knot}
-\DeclareMathOperator{\Diff}{Diff}
-\newcommand{\cG}{\mathcal{G}}
-\DeclareMathOperator{\Lie}{Lie}
-\newcommand{\bC}{\mathbb C}
-\DeclareMathOperator{\Tot}{Tot}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\pd}{\partial}
-\newcommand{\rU}{\mathrm{U}}
-\newcommand{\eps}{\varepsilon}
-\newcommand{\ph}{\varphi}
-\DeclareMathOperator{\Mor}{Mor}
-\DeclareMathOperator{\Stab}{Stab}
-\DeclareMathOperator{\Imm}{Imm}
-\DeclareMathOperator{\Vol}{Vol}
-\DeclareMathOperator{\id}{id}
-\DeclareMathOperator{\sgn}{sgn}
+ \usepackage{amsmath, amsthm}
+% \usepackage{amscd}
+ \usepackage{amsfonts}
+ \usepackage{amssymb}
+ \usepackage[pdftex]{graphicx}
+ \usepackage{csquotes}
+ \usepackage{subfiles}
+% \newcommand{\arr}{\xrightarrow}
+% \DeclareMathOperator{\Maps}{Maps}
+% \DeclareMathOperator{\Kn}{Knot}
+% \DeclareMathOperator{\Diff}{Diff}
+% \newcommand{\cG}{\mathcal{G}}
+% \DeclareMathOperator{\Lie}{Lie}
+% \newcommand{\bC}{\mathbb C}
+% \DeclareMathOperator{\Tot}{Tot}
+% \newcommand{\R}{\mathbb{R}}
+% \newcommand{\pd}{\partial}
+% \newcommand{\rU}{\mathrm{U}}
+% \newcommand{\eps}{\varepsilon}
+% \newcommand{\ph}{\varphi}
+% \DeclareMathOperator{\Mor}{Mor}
+% \DeclareMathOperator{\Stab}{Stab}
+% \DeclareMathOperator{\Imm}{Imm}
+% \DeclareMathOperator{\Vol}{Vol}
+% \DeclareMathOperator{\id}{id}
+% \DeclareMathOperator{\sgn}{sgn}
 
-\newtheorem{lem}{Лемма}
-\newtheorem{thrm}{Теорема}
-\theoremstyle{definition}
-\newtheorem{defn}{Определение}
-\newtheorem{pr}{Задача}
+% % \newtheorem{lem}{Лемма}
+% % \newtheorem{thrm}{Теорема}
+% % \theoremstyle{definition}
+% % \newtheorem{defn}{Определение}
+% % \newtheorem{pr}{Задача}
+
 
 \begin{document}
 
@@ -49,8 +52,8 @@ Faculty of Mathematics\par}
 \vspace{1.5cm}
 
 {\Large\bfseries
-Тема на английском\\
-Тема на русском
+Connections in holomorphic bundles\\
+Связности в голоморфных расслоениях
 \par}
 
 \vspace{1.5cm}
@@ -58,8 +61,8 @@ Faculty of Mathematics\par}
 
 \par\vfill
 \noindent\hspace{0.52\textwidth}\parbox[t]{0.48\textwidth}{%
-Student: \\[1ex]
-Scientific advisor: 
+Student: Lada Andreevna Dudnikova\\[1ex]
+Scientific advisor: Vladimir Andreevich Poberezhny, Ph.D
 }%
 \par\vfill
 Moscow 2020
@@ -70,10 +73,8 @@ Moscow 2020
 %% ===========================================================================
 %%
 
-\section*{Abstract}
-\section*{Introduction}
-\section*{Preliminaries}
-\section*{Main results}
-\section*{References}
-\section*{Appendices}
+
+\subfile{subfile_content}
+
+%%
 \end{document}

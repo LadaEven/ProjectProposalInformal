@@ -2,10 +2,10 @@
 %! Date = 3/29/20
 
 % Preamble
-\documentclass[11pt]{article}
+\documentclass[../main.tex]{subfiles}
 
 % Packages
-\usepackage{amsmath}
+%\usepackage{amsmath}
 %\usepackage[
 %    sorting=nyt,
 %    bibstyle=gost-authoryear,
@@ -17,62 +17,69 @@
 %\addbibresource{main.bib}
 %\bibliography{main}
 %\bibliographystyle{plain}
-\usepackage[T2A, T1]{fontenc}
+%\usepackage[T2A, T1]{fontenc}
 %\usepackage[english]{babel}
-\usepackage[russian]{babel}
-\usepackage{csquotes}
+%\usepackage[russian]{babel}
+% \usepackage{csquotes}
 
 
 %\bibliography{main}
 %\bibliographystyle{plain}
 
+
+
+
+
 % Document
 \begin{document}
 
-    \section*{CoverPage}
-        \begin{itemize}
-            \item Lalalala
-            \item Наименование вуза, факультета, кафедры
-            \item Тема работы на русском и английском языке
-            \item Имя, фамилия, номер группы автора работы
-            \item Должность, ученая степень, фамилия,
-            инициалы научного руководителя ВКР
-            \item место и год написания
-        \end{itemize}
+    % \section*{CoverPage}
+    %     \begin{itemize}
+    %         \item Lalalala
+    %         \item Наименование вуза, факультета, кафедры
+    %         \item Тема работы на русском и английском языке
+    %         \item Имя, фамилия, номер группы автора работы
+    %         \item Должность, ученая степень, фамилия,
+    %         инициалы научного руководителя ВКР
+    %         \item место и год написания
+    %     \end{itemize}
 	
     \begin{abstract}
-        Let me tell about the Riemann-Hilbert problem on elliptic curve.
-        We take a meromorphic matrix function $A(z)$ over a
+        Let me tell you about the Riemann-Hilbert problem on elliptic curve.
+        Let us take a meromorphic matrix function $A(z)$ called \textit{the matrix of coeffitients} over a
         complex manifold and solve the equation
-        $\dot{y} = A(z)y$ depending on $A$ we will get different solution, but the
-        solutions has a monodromy, which can be represented as a set of linear
-        maps.
-        Each map correspods to a singular point of a $A$.
-        This takes us to a monodromy, which is a representation of
-        the fundamental group of punctured surface.
-        But, given the monodromy, how can we find $A$ such that $A$ satisfies it?
+        $\dot{y} = A(z)y$. One will get a linear space of solutions, but the
+        solutions have a monodromy map associated with singular points of the coefficients, which can be represented as a set of linear
+        maps on the space of solutions.
+        Each monodromy map correspodns to a specific singular point of $A$.
+        Taking these maps together, a representation of
+        the fundamental group of punctured surface is constructed.
+        One assigns every loop class to the corresponding monodromy
+        of the equation.
+        But, given the monodromy representation, how can one find $A$ which corresponds to this representation?
         This question is a naive statement of a Riemann-Hilbert problem,
         or Inverse Monodromy problem.
 
-        It turns out that we can generalize our construction and treat the solutions
-        as a trivial bundle sections and $A$ as the matrix of a flat connection inside the bundle.
-        In this more general setting a huge opportuity potentially slumbers, because
-        the language of bundles and connections is more algebraic than the analytic one
+        It turns out that one can generalize the above construction and treat the solutions
+        as the sections of a semistable zero-degree bundle and $A$ as the matrix of a flat connection on the bundle.
+        In this more general setting lies a huge opportuity, because
+        the language of bundles and connections is inherently algebraic, contrary to the analytic one
         which was presented in the beginning.
-        Let us confine the generalization to the case of stable bundles since their Chern
+        I confine the generalization to the case of semistable bundles since their Chern
         classes behave better than for a non-stable one, and
-         if the bundle has suficiently large degree. (The degree of the divisor
+         if the bundle has suficiently large degree (the degree of the divisor
         of the arbitrary section), then the bundle has a set of global sections
         which form a basis at every point.
-        The profit of this confinement will not be seen in out current inquisitions, but this
+        The profit of this confinement will not be seen in the current inquisitions, but this
         property gives much in terms of algebraic structure of the bundle.
-        Let us confine the considerations to the case of logarithmic(Fuchsian)
-        connections which have simple poles only.
-        However, one can try to construct the connections and solutions explicitly.
-
-        \Large{We solve (blablabla)}
-
-        \Large{And we are expecting to get (blablabla) results}
+        Let us confine the considerations to the case of logarithmic (Fuchsian)
+        connections. These are connections which have simple poles only.
+       One can try to construct the connections and solutions explicitly.
+        
+        I want to construct such connections in
+        a two-dimensional exceptional (non-splitting)  (see Thm5 in Atyiah's paper \cite{atiyah1957vector})
+        bundle over an elliptic curve.
+        I expect to get the explicit formulas for the connections, and find which monodromies they represent.
 %        \begin{itemize}
 %            \item Предполагаемые результаты исследования
 %            \item Инструменты исследования
@@ -83,20 +90,25 @@
     \end{abstract}
 
 
-    \section{Introduction}\label{sec:introduction}
-        \begin{itemize}
-            \item Постановка задачи ВКР (Понятно математику)
-            \item Мотивировка
-            \item История вопроса
-        \end{itemize}
+
+
+
+
+
+    \section*{Introduction}\label{sec:introduction}
+        % \begin{itemize}
+        %     \item Постановка задачи ВКР (Понятно математику)
+        %     \item Мотивировка
+        %     \item История вопроса
+        % \end{itemize}
 
 
 
 
     Let us have an elliptic curve which is a holomorphic one-dimensional
-    manifold of genus $1$
+    manifold of genus $1$.
 %        В этой работе исследуются плоские логарифмические связности
-    The work treats flat logarighmic connections
+    In my bachelor thesis I will treat flat logarighmic connections
 %        в голоморфных расслоениях размерности 1 и 2
     in holomorphic bundles of rank $2$ and degree $0$ over elliptic curve.
 %        степени 0 над эллиптической кривой.
@@ -112,25 +124,24 @@
 %
     Horizontal sections of the connection are such sections that
     $\nabla s = 0$ or $d s = A dz \otimes s $ holds where both sides belong to
-    $E \otimes T^*M$.
-    Any matrix function that changes along the bundle sections
+    $E \otimes T^*M$. The matrix $A$ is called the \textit{connection matrix} in this setting. 
+    Any  meromorphic matrix that is changed along the bundle sections
     such that the horizontal section stays horizontal with
-    respect to this modifying matrix is
+    respect to this modified matrix is a
     connection matrix for a particular bundle.
-    [Matveeva and Poberezhny] in their article which deal
-    with the case of a connection over a two-dimensional stable bundle.
-    They proof that the answer always exist.
+    Matveeva and Poberezhny in their article \cite{matveeva2017two} consider the case of a connection over the stable direct sum of line bundles.
+    % They proved that the answer always exist.
     They find a Fuchsian connection corresponding to a rigid representation
     (here: the representation induced from a sphere) with $3$ branch points.
     They find explicitly a conection which is associated to the stable bundle
     $\mathcal{O}_{\lambda} (0) \oplus \mathcal{O}_{-\lambda} (0)$ for
     given $\lambda$.
-    The logarithm of a local monodromy of any connection is conjugated to
+    The logarithm of a local monodromy matrix of the found connection is conjugated to
     the residue of the matrix of the connection at the given monodromy point.
     Then, using these facts they find the solution for local monodromies and
     give an integral equation that should be
     satisfied by a conjugated (deformed) connection matrix so the global
-    monodromy was trivial.
+    monodromy was trivial. See Preliminaries for additional
 
     There is a couple of thoughts I have not yet elaborated.
     First, it would be marvelous to infer some general properties
@@ -140,7 +151,7 @@
     using Serre Duality, Riemann-Roch cohomology theorem, Chern characters
 %        двойственность Серра, теорема Римана-Роха и гомологической
     and $Ext$ groups, which are standard algebraic
-    instruments when we are studying complex manifolds.
+    instruments when one is studying complex manifolds.
 %        алгебры, такие, как производные функторы, для
 %        понимания структуры этих пространств.
     Second, I like to think about connections as
@@ -168,7 +179,7 @@
     Any line-bundle has sections, represented by a product of theta-functions.
 %        Также классическим подходом к исследованию расслоений
 %        является рассмаотрение модулярной кривой расслоений.
-    We will heavily use it in our constructions.
+    I will heavily use it in our constructions.
     Another classic object is Hypergeometric Differential Equation.
     The canonical form is
     \[ z(1-z) \frac{d^2y}{dz^2} + [c-(a+b+1)z] \frac{dy}{dz} - aby\]
@@ -177,12 +188,11 @@
     This second-order linear differential equation can be represented as
     \begin{equation}
         \begin{pmatrix}
-            0 & 1 & 0 \\
-            0 & 0 & 1 \\
-            \frac{ab}{z(z-1)} & \frac{c - (a+b+1)z}{z(z-1)} & 0
+            0 & 1 \\
+            \frac{ab}{z(z-1)} & \frac{c - (a+b+1)z}{z(z-1)} 
 
-        \end{pmatrix}  \begin{pmatrix} y_0 \\ y_1 \\ y_2
-                           \end{pmatrix} = \frac{d}{dz} \begin{pmatrix} y_0 \\ y_1 \\ y_2
+        \end{pmatrix}  \begin{pmatrix} y_0 \\ y_1 
+                           \end{pmatrix} = \frac{d}{dz} \begin{pmatrix} y_0 \\ y_1
                                                \end{pmatrix}
     \end{equation}
         this equation has a two-dimensional space of solution.
@@ -196,7 +206,7 @@
 %        Они являются первым "Нетривиальным примером", на котором
 %        математики могут попробовать свои силы.
     The Riemann-Hilbert problem on the Riemann
-        sphere was solved negatively by Andrey Bolybruch in $1988$. \cite{Ilyashenko08lectureson}
+        sphere was solved negatively by Andrey Bolybruch in $1988$, using the techniques leading to many other results. \cite{Ilyashenko08lectureson}
     He has provided an explicit counterexample of a punctured Riemann sphere fundamental
     group representation that can not be a monodromy
     representation of a Fuchsian system.
@@ -224,20 +234,31 @@
 
 
 
-    \section{Preliminaries} \label{sec:prelim}
+    \section*{Preliminaries} \label{sec:prelim}
        Определения и теоремы, которые входят в Introduction
-        Понятие когерентного пучка обобщает понятие локально
-       свободного пучка конечного ранга.
-        Локальносвободный пучок конечного ранга на многообразии
-        в точности соответствует векторному расслоению.
-    \subsection{Explicit computation methods}\label{subsec:методы-явных-вычислений}
+    %     Понятие когерентного пучка обобщает понятие локально
+    %   свободного пучка конечного ранга.
+    %     Локальносвободный пучок конечного ранга на многообразии
+        % в точности соответствует векторному расслоению.
+        Далее, про постановку задачи есть небольшая проблема. 
+        Теоретически она из двух частей.
+        Первая это выяснить как вообще устроены расслоения на эллиптической кривой, сначала одномерные а потом двумерные, как их удобно описывать, как устроены логарифмические связности в них, как они пишутся в явном виде через тэта-функции, причём здесь вообще тэта-функции.
+        
+        I will assume that the definition of the vector bundle is known.
+        
+        
+        Вторая часть - это после освоения первой части порешать какую-нибудь практическую задачу. Например, найти общий вид связности в исключительном двумерном расслоении или описать калибровочные симметрии связности в полустабильном, или найти аналог формулы с экспонентой вычета для монодромий по а- и б- циклам.
+        % И вроде бы первая часть у нас более-менее случилась, что уже, конечно, весьма немало, а до второй мы как-то пока не дошли. 
+
+
+    \subsection*{Methods of computations}\label{subsec:методы-явных-вычислений}
 
 
 
-    \section{Main Results}\label{sec:main-results}
-        Результаты~
-    Возможно, есть связь между когомологиями пучка, соответствующего связности,
-    и когомологиями пучка исходного расслоения.
+    \section*{Main Results}\label{sec:main-results}
+    %     Результаты~
+    % Возможно, есть связь между когомологиями пучка, соответствующего связности,
+    % и когомологиями пучка исходного расслоения.
 
 
 %    \cite{book}
@@ -250,7 +271,7 @@
 \bibliographystyle{unsrt}
 \bibliography{main}
 
-    \section{Appendices}\label{sec:appendices}
+    % \section{Appendices}\label{sec:appendices}
 
 
 
