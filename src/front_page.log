@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.3.31)  11 APR 2020 09:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.3.31)  12 APR 2020 06:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -481,25 +481,25 @@ Non-PDF special ignored!
 <special> papersize=597.50787pt,845.04684pt
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./subfile_content.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (5.67099pt too wide) in paragraph at lines 81--90
+Overfull \hbox (5.67099pt too wide) in paragraph at lines 84--93
 []\T2A/cmr/m/n/10 I want to con-struct such con-nec-tions in a two-dimensional ex-cep-tional (non-splitting)
  []
 
 
-Overfull \hbox (17.11182pt too wide) in paragraph at lines 109--111
+Overfull \hbox (17.11182pt too wide) in paragraph at lines 111--113
 []\T2A/cmr/m/n/10.95 Вторая часть - это после освоения первой части порешать какую-нибудь практическую
  []
 
 
-Overfull \hbox (12.03828pt too wide) in paragraph at lines 109--111
+Overfull \hbox (12.03828pt too wide) in paragraph at lines 111--113
 \T2A/cmr/m/n/10.95 задачу. Например, найти общий вид связности в исключительном двумерном расслоении
  []
 
@@ -511,9 +511,9 @@ Here is how much of TeX's memory you used:
  9024 multiletter control sequences out of 15000+600000
  19015 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,7n,30p,821b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,7n,30p,821b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on front_page.pdf (4 pages, 221655 bytes).
+Output written on front_page.pdf (4 pages, 221766 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream

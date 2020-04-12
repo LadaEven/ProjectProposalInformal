@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex front_page"] 1586587089 "front_page.aux" "front_page.bbl" "front_page" 1586588238
+["bibtex front_page"] 1586663328 "front_page.aux" "front_page.bbl" "front_page" 1586673294
   "/usr/share/texmf-dist/bibtex/bst/base/unsrt.bst" 1572595918 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "front_page.aux" 1586588238 437 a838d6a2a1c60b4f2ce545dc006947f7 "pdflatex"
-  "main.bib" 1586537536 1804 d57a0c003665458e02b0abb9520a764c ""
+  "front_page.aux" 1586663328 437 91953e5f945014b2392850db5cedf232 "pdflatex"
+  "main.bib" 1586603637 2326 9ff2bcfe2f36df107c3bb76aa9e2dba0 ""
   (generated)
   "front_page.blg"
   "front_page.bbl"
-["pdflatex"] 1586588238 "front_page.tex" "front_page.pdf" "front_page" 1586588238
+["pdflatex"] 1586663328 "front_page.tex" "front_page.pdf" "front_page" 1586673294
   "/home/plumpie/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1522585310 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/home/plumpie/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1095.tfm" 1527866917 3336 216c27338cb0f11f0d2908d69ce3de23 ""
   "/home/plumpie/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1522585311 3308 eee81981029f67083258db36df06e523 ""
@@ -101,11 +101,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1585645525 338991 e1a5e61d4d785a237416e28ce191b722 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1585645519 8044939 d724fa4bf9f34a424be1d8ffa2738276 ""
-  "front_page.aux" 1586588238 437 a838d6a2a1c60b4f2ce545dc006947f7 "pdflatex"
-  "front_page.bbl" 1586587089 839 4d9f6414f734d5216ee4db4bb5bcccb0 "bibtex front_page"
+  "front_page.aux" 1586663328 437 91953e5f945014b2392850db5cedf232 "pdflatex"
+  "front_page.bbl" 1586663328 839 4d9f6414f734d5216ee4db4bb5bcccb0 "bibtex front_page"
   "front_page.tex" 1586537536 1921 65a18fb2d2e0edff03627d183f62f397 ""
-  "subfile_content.tex" 1586588237 16282 9be9129e29692ea4f6a40a574cc403d3 ""
+  "subfile_content.tex" 1586603752 16326 c79e04c38d29945ebd2819c5b20ac35b ""
   (generated)
-  "front_page.log"
   "front_page.pdf"
   "front_page.aux"
+  "front_page.log"
