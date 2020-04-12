@@ -3,4 +3,5 @@
 
 I edited it in 3 different places: PyCharm , Overleaf and Vim.
 
-They all have the GitHub sync, but they provide the compilation result in different places.
+Girst and second have the GitHub sync, but they provide the compilation result in different places.
+Vim changes were committed throug cli
